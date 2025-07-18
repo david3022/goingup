@@ -1,0 +1,111 @@
+<!-- Carrusel infinito de logos de empresas -->
+
+
+<style>
+  @-webkit-keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(calc(-250px * 7));
+            transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  
+  background: white;
+  /*box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);*/
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 95%;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  -webkit-transform: rotateZ(180deg);
+          transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+          animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 50px;
+  width: 250px;
+}
+
+.slide img{
+  width: auto;
+  height: 50px;
+}
+
+</style>
+
+<!-- <h2 class="carousel-title"></h2> -->
+<div class="slider">
+  <div class="slide-track">
+    <div class="slide"><img src="/logos/facebook.png" alt="Facebook" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/instagram.png" alt="Instagram" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/tiktok.png" alt="TikTok" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/shopify.png" alt="Shopify" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/amazon.png" alt="Amazon AWS" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/google.png" alt="Google" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/whatsapp.png" alt="Whatsapp" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/odoo.png" alt="Odoo" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/simla.png" alt="Simla" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/wordpress.png" alt="Wordpress" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/godaddy.png" alt="GoDaddy" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/adobe.png" alt="Adobe" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/canva.png" alt="Canva" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/linkedin.png" alt="LinkedIn" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/azure.png" alt="Azure" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/salesforce.png" alt="Salesforce" height="100" width="250"></div>
+
+    <!-- Duplicación visual para scroll infinito -->
+    <div class="slide"><img src="/logos/facebook.png" alt="Facebook" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/instagram.png" alt="Instagram" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/tiktok.png" alt="TikTok" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/shopify.png" alt="Shopify" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/amazon.png" alt="Amazon AWS" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/google.png" alt="Google" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/whatsapp.png" alt="Whatsapp" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/odoo.png" alt="Odoo" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/simla.png" alt="Simla" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/wordpress.png" alt="Wordpress" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/godaddy.png" alt="GoDaddy" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/adobe.png" alt="Adobe" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/canva.png" alt="Canva" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/linkedin.png" alt="LinkedIn" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/azure.png" alt="Azure" height="100" width="250"></div>
+    <div class="slide"><img src="/logos/salesforce.png" alt="Salesforce" height="100" width="250"></div>
+  </div>
+</div>
+

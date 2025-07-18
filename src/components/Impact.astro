@@ -1,0 +1,281 @@
+<div class="bg-gray min-h-screen py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <p class="flex justify-center items-center gap-3 text-3xl md:text-4xl font-extrabold text-black ">
+        <span>Business Growth Metrics</span>
+        <svg class="w-10 h-10 text-red-600 animate-bounce" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"/>
+        </svg>
+      </p>
+      <p class="mt-4 text-lg text-gray-600 text-gray-300 max-w-2xl mx-auto">
+        Real-time performance indicators showing your business transformation
+      </p>
+    </div>
+
+    <!-- Primary Metrics Grid -->
+    <div id="metrics-section" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <!-- Revenue Card -->
+      <div class="p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-gradient-to-br from-green-50 to-green-100 from-green-900/30 to-green-800/30">
+        <div class="w-14 h-14 rounded-full flex items-center justify-center mb-4 bg-green-100 bg-green-800">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-gray-700 text-gray-200 mb-2">Monthly Revenue</h3>
+        <div class="text-3xl font-bold text-gray-900 text-white mb-1" id="revenue-counter">$0</div>
+        <p class="text-sm font-medium text-green-600 text-green-400">↑ 24.5% last quarter</p>
+      </div>
+
+      <!-- Conversion Rate Card -->
+      <div class="p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-gradient-to-br from-blue-50 to-blue-100 from-blue-900/30 to-blue-800/30">
+        <div class="w-14 h-14 rounded-full flex items-center justify-center mb-4 bg-blue-100 bg-blue-800">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-gray-700 text-gray-200 mb-2">Conversion Rate</h3>
+        <div class="text-3xl font-bold text-gray-900 text-white mb-1" id="conversion-counter">0%</div>
+        <p class="text-sm font-medium text-green-600 text-green-400">↑ 8.2% from last month</p>
+      </div>
+
+      <!-- Customer Satisfaction Card -->
+      <div class="p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-gradient-to-br from-yellow-50 to-yellow-100 from-yellow-900/30 to-yellow-800/30">
+        <div class="w-14 h-14 rounded-full flex items-center justify-center mb-4 bg-yellow-100 bg-yellow-800">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Cara amarilla -->
+  <circle cx="50" cy="50" r="45" fill="#FFD700" stroke="black" stroke-width="2" />
+
+  <!-- Ojos negros -->
+  <circle cx="35" cy="40" r="5" fill="black" />
+  <circle cx="65" cy="40" r="5" fill="black" />
+
+  <!-- Boca negra -->
+  <path d="M35 65 Q50 80 65 65" stroke="black" stroke-width="3" fill="none" stroke-linecap="round" />
+</svg>
+
+        </div>
+        <h3 class="text-lg font-semibold text-gray-700 text-gray-200 mb-2">Customer Satisfaction</h3>
+        <div class="text-3xl font-bold text-gray-900 text-white mb-1" id="satisfaction-counter">0%</div>
+        <p class="text-sm font-medium text-green-600 text-green-400">↑ 12% this year</p>
+      </div>
+
+      <!-- Traffic Growth Card -->
+      <div class="p-6 rounded-xl shadow-md transition-all duration-300 hover:shadow-lg hover:-translate-y-1 bg-gradient-to-br from-purple-50 to-purple-100 from-purple-900/30 to-purple-800/30">
+        <div class="w-14 h-14 rounded-full flex items-center justify-center mb-4 bg-purple-100 bg-purple-800">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 013 19.875v-6.75zM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V8.625zM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 01-1.125-1.125V4.125z"/>
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold text-gray-700 text-gray-200 mb-2">Monthly Visitors</h3>
+        <div class="text-3xl font-bold text-gray-900 text-white mb-1" id="traffic-counter">0</div>
+        <p class="text-sm font-medium text-green-600 text-green-400">↑ 42.7% YoY</p>
+      </div>
+    </div>
+
+    <!-- Secondary Metrics Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+      <!-- Average Order Value Card -->
+      <div class="p-4 rounded-lg shadow-sm transition-all duration-300 hover:shadow-md bg-gradient-to-br from-cyan-50 to-cyan-100 from-cyan-900/20 to-cyan-800/20">
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center bg-cyan-100 bg-cyan-800">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0115.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 013 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 00-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 01-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 003 15h-.75M15 10.5a3 3 0 11-6 0 3 3 0 016 0zm3 0h.008v.008H18V10.5zm-12 0h.008v.008H6V10.5z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-base font-medium text-gray-700 text-gray-200">Avg. Order Value</h3>
+            <div class="text-xl font-bold text-gray-900 text-white" id="aov-counter">$0</div>
+          </div>
+        </div>
+        <p class="text-xs font-medium mt-2 text-green-600 text-green-400">↑ 15.3%</p>
+      </div>
+
+      <!-- Repeat Customers Card -->
+      <div class="p-4 rounded-lg shadow-sm transition-all duration-300 hover:shadow-md bg-gradient-to-br from-pink-50 to-pink-100 from-pink-900/20 to-pink-800/20">
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center bg-pink-100 bg-pink-800">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-base font-medium text-gray-700 text-gray-200">Repeat Customers</h3>
+            <div class="text-xl font-bold text-gray-900 text-white" id="repeat-counter">0</div>
+          </div>
+        </div>
+        <p class="text-xs font-medium mt-2 text-green-600 text-green-400">↑ 32.1%</p>
+      </div>
+
+      <!-- Cart Abandonment Card -->
+      <div class="p-4 rounded-lg shadow-sm transition-all duration-300 hover:shadow-md bg-gradient-to-br from-orange-50 to-orange-100 from-orange-900/20 to-orange-800/20">
+        <div class="flex items-center gap-4">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center bg-orange-100 bg-orange-800">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-base font-medium text-gray-700 text-gray-200">Cart Abandonment</h3>
+            <div class="text-xl font-bold text-gray-900 text-white" id="abandonment-counter">0%</div>
+          </div>
+        </div>
+        <p class="text-xs font-medium mt-2 text-red-600 text-red-400">↓ 18.6%</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    // Función para animar los contadores
+    const animateCounter = (elementId, target, prefix = '', suffix = '', duration = 2000) => {
+      const element = document.getElementById(elementId);
+      if (!element) return;
+      
+      const start = 0;
+      const increment = target / (duration / 16);
+      let current = start;
+      
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          clearInterval(timer);
+          current = target;
+        }
+        element.textContent = prefix + Math.floor(current).toLocaleString() + suffix;
+      }, 16);
+    };
+
+    // Configuración del Intersection Observer
+    const observerOptions = {
+      threshold: 0.5 // Se dispara cuando el 50% del elemento es visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          // Animar todos los contadores cuando la sección es visible
+          animateCounter('revenue-counter', 358420, '$');
+          animateCounter('conversion-counter', 7, '', '%');
+          animateCounter('satisfaction-counter', 94, '', '%');
+          animateCounter('traffic-counter', 125430);
+          animateCounter('aov-counter', 42, '$');
+          animateCounter('repeat-counter', 4235);
+          animateCounter('abandonment-counter', 62, '', '%');
+          
+          // Dejar de observar después de la primera vez
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    // Observar la sección de métricas
+    const metricsSection = document.getElementById('metrics-section');
+    if (metricsSection) {
+      observer.observe(metricsSection);
+    }
+  });
+</script>
+
+
+
+
+
+
+<!-- 
+
+<div class="bg-gray-800 h-screen ">
+
+    <div class="col-span-3 md:col-span-2 flex flex-col items-center md:items-start gap-4 pt-16 px-2">
+
+        <p class="flex justify-center w-full gap-2 pt-4 font-extrabold text-2xl md:text-3xl text-white">
+            <span>Impact</span>
+
+            <svg class="w-8 h-8 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                stroke-width="1.5" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M15.362 5.214A8.252 8.252 0 0112 21 8.25 8.25 0 016.038 7.048 8.287 8.287 0 009 9.6a8.983 8.983 0 013.361-6.867 8.21 8.21 0 003 2.48z">
+                </path>
+                <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M12 18a3.75 3.75 0 00.495-7.467 5.99 5.99 0 00-1.925 3.546 5.974 5.974 0 01-2.133-1A3.75 3.75 0 0012 18z">
+                </path>
+            </svg>
+        </p>
+
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 pb-8 pt-4 mx-auto">
+
+            <div title="All countributed components"
+                class="flex flex-col justify-center items-center gap-2 border-2 border-dashed border-gray-500/50 p-4 rounded-md h-32 text-gray-200">
+                <div class="flex gap-2 items-center">
+                    <span class="font-bold text-3xl md:text-4xl">
+                30
+            </span>
+                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"></path>
+                    </svg>
+                </div>
+                <span class="font-semibold text-sm text-center">Components contributed</span>
+            </div>
+
+            <div title="Users got help"
+                class="flex flex-col justify-center items-center gap-2 border-2 border-dashed border-gray-500/50 p-4 rounded-md h-32 text-gray-200">
+                <div class="flex gap-2 items-center">
+                    <span class="font-bold text-3xl md:text-4xl">
+                93.9k
+            </span>
+                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z">
+                        </path>
+                    </svg>
+                </div>
+                <span class="font-semibold text-sm text-center">Users got help</span>
+            </div>
+
+            <div title="Total favorites received on components"
+                class="flex flex-col justify-center items-center gap-2 border-2 border-dashed border-gray-500/50 p-4 rounded-md h-32 text-gray-200">
+                <div class="flex gap-2 items-center">
+                    <span class="font-bold text-3xl md:text-4xl">
+                60
+            </span>
+                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z">
+                        </path>
+                    </svg>
+                </div>
+                <span class="font-semibold text-sm text-center">Favorites received</span>
+            </div>
+
+            <div title="component views"
+                class="md:col-start-2 lg:col-auto flex flex-col justify-center items-center gap-2 border-2 border-dashed border-gray-500/50 p-4 rounded-md h-32 text-gray-200">
+                <div class="flex gap-2 items-center">
+                    <span class="font-bold text-3xl md:text-4xl">
+                3.3k
+            </span>
+                    <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z">
+                        </path>
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z">
+                        </path>
+                    </svg>
+                </div>
+                <span class="font-semibold text-sm text-center">Views in last 30 days</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div> -->
+
+
+

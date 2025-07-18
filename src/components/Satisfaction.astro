@@ -1,0 +1,49 @@
+---
+import ShakeHands from "../assets/shake.png";
+import Results from "../assets/results.mp4";
+import Satisfaciton from "../assets/satisfaction.png";
+---
+
+
+<div class="flex flex-col md:flex-row items-center justify-around gap-4 p-6 md:p-12 bg-white  my-12">
+  <!-- Text Section -->
+  <div class="md:w-3/4 text-left">
+    <h2 class="text-xl text-center md:text-2xl font-semibold text-gray-800 leading-relaxed">
+      From the very beginning, we’ve kept our feet on the ground, our goals in focus, and the best customer service.</h2>
+    <h2 class="text-xl text-center md:text-2xl font-semibold text-gray-800 leading-relaxed">
+       That’s why we confidently offer you a Satisfaction Guarantee
+    </h2>
+  </div>
+
+  <!-- Image Section -->
+  <div class="md:w-1/4 flex justify-center">
+    <img src={ShakeHands.src} alt="Handshake" class="w-48 h-48 object-cover rounded-full shadow-sm" />
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="w-full flex justify-center items-center mb-8">
+  <video 
+    src={Results}
+    autoplay 
+    muted 
+    loop 
+    playsinline
+    class="h-[14vh] aspect-[32/9] object-cover"
+  ></video>
+</div>
+
+
+<div class="partnership">
+    <img src={Satisfaciton.src} alt="" srcset="">
+</div>
+
+
+<a href="./#type" class="inline-block m-8 px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold shadow-md hover:bg-blue-700 transition duration-300">
+  Go to Main page
+</a>
